@@ -1,0 +1,11 @@
+---
+source: crates/compiler/tests/scanner_test/mod.rs
+assertion_line: 60
+expression: "<style></style "
+---
+- StartTag:
+    name: style
+    attributes: []
+    self_closing: false
+- EndTag: style
+

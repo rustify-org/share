@@ -1,0 +1,11 @@
+---
+source: crates/compiler/tests/scanner_test/mod.rs
+assertion_line: 44
+expression: "<a></a < / attr attr=\">\" >"
+---
+- StartTag:
+    name: a
+    attributes: []
+    self_closing: false
+- EndTag: a
+
