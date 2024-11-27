@@ -5,3 +5,9 @@
 
 export declare function sum(a: number, b: number): number
 export declare function sub(a: number, b: number): number
+export declare function concatStr(a: string, b: string): string
+export interface ToolOptions {
+  id: number
+  name: string
+}
+export declare function getOptions(options: ToolOptions): ToolOptions
