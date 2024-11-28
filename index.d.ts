@@ -12,3 +12,4 @@ export interface ToolOptions {
 }
 export declare function getOptions(options: ToolOptions): ToolOptions
 export declare function asyncFib(input: number, withCache: boolean): Promise<string>
+export declare function callThreadsafeFunction(callback: (err: null | Error, result: number) => void): void

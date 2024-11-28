@@ -1,6 +1,6 @@
 import test from 'ava'
 
-import { sum, sub, concatStr, getOptions, asyncFib } from '../index.js'
+import { sum, sub, concatStr, getOptions, asyncFib, callThreadsafeFunction } from '../index.js'
 
 test('sum from native', (t) => {
   t.is(sum(1, 2), 3)
@@ -36,4 +36,13 @@ test('asyncFib with cache', async (t) => {
   const result = await asyncFib(40, true);
   console.timeEnd('with cache');
   t.is(result, 102334155);
+});
+
+
+test("callThreadsafeFunction from native", async (t) => {
+  t.is(
+    callThreadsafeFunction((err, ...args) => {
+      console.log("Get the result from rust", args);
+    })
+  );
 });
