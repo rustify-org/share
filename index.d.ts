@@ -11,3 +11,4 @@ export interface ToolOptions {
   name: string
 }
 export declare function getOptions(options: ToolOptions): ToolOptions
+export declare function asyncFib(input: number, withCache: boolean): Promise<string>
