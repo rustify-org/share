@@ -1,8 +1,0 @@
----
-source: crates/compiler/tests/scanner_test/mod.rs
-assertion_line: 44
-expression: "<!-- nested <!--> text -->"
----
-- Comment: " nested <!"
-- Text: " text -->"
-
