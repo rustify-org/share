@@ -6,3 +6,5 @@ export default defineConfig({
   format: ["esm"],
   sourcemap: false
 })
+
+// ! esbuild大部分应用在transformer 而不是bundle 大量的小chunk IO的开销巨大 
