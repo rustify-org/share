@@ -1,3 +1,3 @@
-import { simple } from "./shared";
+import { simple } from "./shared1";
 
 console.log(simple + 1)

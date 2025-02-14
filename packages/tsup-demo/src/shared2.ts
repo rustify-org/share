@@ -1,0 +1,1 @@
+export const simple2 = "simple2"

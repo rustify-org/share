@@ -1,0 +1,19 @@
+{
+  "name": "esbuild-rollup-cjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:rollup": "rollup -c rollup.config.mjs",
+    "build:esbuild": "node esbuild.config.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "esbuild": "^0.25.0",
+    "rollup": "^4.34.6"
+  }
+}
