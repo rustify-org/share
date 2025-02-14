@@ -1,4 +1,4 @@
-import cjsModule from "./cjs-module.js";
+import greet from "./cjs-func.js";
 
-console.log(cjsModule.message);
-console.log(cjsModule.greet("Esbuild"));
+console.log(greet("Esbuild"));  // 期望调用函数
+console.log(greet.extra);       // 访问额外属性

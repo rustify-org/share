@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:rollup": "rollup -c rollup.config.mjs",
-    "build:esbuild": "node esbuild.config.mjs"
+    "build:rollup": "rollup -c rollup.config.mjs && node dist/rollup-bundle.js",
+    "build:esbuild": "node esbuild.config.mjs && node dist/esbuild-bundle.js"
   },
   "keywords": [],
   "author": "",

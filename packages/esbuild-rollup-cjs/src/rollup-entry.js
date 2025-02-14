@@ -1,4 +1,4 @@
-import cjsModule from "./cjs-module.js";
+import greet from "./cjs-func.js";
 
-console.log(cjsModule.message);
-console.log(cjsModule.greet("Rollup"));
+console.log(greet("Rollup"));
+console.log(greet.extra);       // 访问额外属性
